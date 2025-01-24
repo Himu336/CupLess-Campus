@@ -29,7 +29,7 @@ The platform enables users to:
 To clone this repository, run the following command in your terminal:
 
 ```bash
-git clone https://github.com/yourusername/cupless-campus.git
+git clone https://github.com/Himu336/cupless-campus.git
 ```
 
 ## Features Breakdown
@@ -60,3 +60,8 @@ A section that dynamically lists recent posts from the community, encouraging in
 - Commit your changes (git commit -am 'Add new feature').
 - Push to the branch (git push origin feature-name).
 - Create a new pull request.
+
+## Acknowledgments
+- Technotronics Hackathon - for providing the opportunity to work on this project.
+- Dnyanprassarak Mandal's College and Research Centre - for hosting the hackathon.
+- Open-source libraries - such as Bootstrap, Chart.js, etc., for helping build the user interface and charts.
