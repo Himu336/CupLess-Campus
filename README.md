@@ -30,32 +30,33 @@ To clone this repository, run the following command in your terminal:
 
 ```bash
 git clone https://github.com/yourusername/cupless-campus.git
+```
 
-Features Breakdown
+## Features Breakdown
 Hero Section
 The Hero Section displays the main message and options for users to either take a pledge, view the community forum, or track their impact.
 
-Pledge System
+## Pledge System
 Users can click to take the pledge and commit to reducing disposable cup usage. Once a pledge is made, they can confirm it, and it gets recorded in the system.
 
-Impact Dashboard
+## Impact Dashboard
 The Impact Dashboard shows key statistics about the number of pledges, plastic cups saved, CO₂ reduced, and trees saved. This section dynamically updates as users engage with the platform.
 
-Fun Facts
+## Fun Facts
 A section that provides motivational quotes and facts to encourage users to take small actions toward sustainability.
 
-Community Forum
+## Community Forum
 Users can explore or create posts within the community forum, discussing ways to reduce plastic waste and track collective progress. It features:
 
-Start a Discussion button.
+## Start a Discussion button.
 Explore Forum button to view active discussions.
 Recent Posts
 A section that dynamically lists recent posts from the community, encouraging interaction and learning from others' actions.
 
-How to Contribute
-Fork the repository.
-Create a new branch (git checkout -b feature-name).
-Make your changes.
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-name).
-Create a new pull request.
+## How to Contribute
+- Fork the repository.
+- Create a new branch (git checkout -b feature-name).
+- Make your changes.
+- Commit your changes (git commit -am 'Add new feature').
+- Push to the branch (git push origin feature-name).
+- Create a new pull request.
