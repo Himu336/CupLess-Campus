@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CupLess Campus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero-section text-center text-white py-5">
+    <div class="container">
+      <h1 class="display-4 animate__animated animate__fadeIn animate__delay-1s">CupLess Campus</h1>
+      <p class="lead animate__animated animate__fadeIn animate__delay-2s">Join the movement to reduce disposable cup usage. Learn, pledge, and track your positive impact!</p>
+      <div class="d-flex justify-content-center gap-4 mt-4 animate__animated animate__fadeIn animate__delay-3s">
+        <a href="javascript:void(0);" class="btn btn-success btn-lg shadow-lg" id="take-pledge-btn">Take a Pledge</a>
+        <a href="#community" class="btn btn-primary btn-lg shadow-lg">Community Forum</a>
+        <a href="#tracker" class="btn btn-warning btn-lg shadow-lg">View Impact Tracker</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- New section for taking a pledge -->
+  <div class="container mt-4" id="pledge-section" style="display: none;">
+    <h4>Commit to making a positive impact!</h4>
+    <p>By clicking here, you are committing to saving plastic by recycling it. You've just saved plastic, and every reusable cup helps protect the environment!</p>
+    <button class="btn btn-primary" id="confirm-pledge-btn">Confirm Pledge</button>
+  </div>
+
+  <!-- Motivational Message -->
+  <div class="text-center mt-4">
+    <blockquote id="motivationalMessage" class="blockquote">
+      "Small actions make a big difference. Start today!"
+    </blockquote>
+  </div>
+
+  <!-- Impact Dashboard -->
+  <div class="container mt-5" id="tracker">
+    <h3>Your Impact Dashboard</h3>
+    <div class="row text-center mt-4">
+      <!-- Stats Cards -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5>Total Pledges</h5>
+            <h2 id="totalPledges" class="text-success">0</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5>Plastic Cups Saved</h5>
+            <h2 id="plasticCupsSaved" class="text-warning">0</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5>CO₂ Reduced</h5>
+            <h2 id="co2Reduced" class="text-primary">0kg</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5>Trees Saved</h5>
+            <h2 id="treesSaved" class="text-danger">0</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fun Facts Section -->
+    <div class="container mt-5">
+      <h3>Did You Know?</h3>
+      <div id="funFacts" class="alert alert-info mt-3" role="alert">
+        "Your efforts are saving the planet—one step at a time!"
+      </div>
+    </div>
+
+    <!-- Community Forum Section -->
+    <div id="community" class="container mt-5">
+      <div class="text-center mb-4">
+        <h3 class="display-4">Join the Community Forum</h3>
+        <p class="lead">Share ideas, experiences, and track collective progress towards a plastic-free future!</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-lg border-light rounded p-4 community-card">
+            <h5 class="card-title">Start a Discussion</h5>
+            <p class="card-text">Have thoughts on how we can reduce plastic waste? Start a conversation with the community!</p>
+            <button class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#createPostModal">Create a Post</button>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-lg border-light rounded p-4 community-card">
+            <h5 class="card-title">Explore Forum</h5>
+            <p class="card-text">Catch up with ongoing discussions and see how others are taking action!</p>
+            <button class="btn btn-info btn-lg w-100" id="exploreForumBtn">Explore Forum</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Posts Section -->
+      <div id="recent-posts" class="mt-5 text-center">
+        <h4 class="mb-3">Recent Posts</h4>
+        <!-- Dynamically generate posts here -->
+        <div id="post-list" class="row justify-content-center">
+          <!-- Example Post -->
+          <div class="col-md-3 mb-3">
+            <div class="card shadow-sm border-primary">
+              <div class="card-body">
+                <h6 class="card-title">The Power of Small Actions</h6>
+                <p class="card-text">Every reusable cup makes a difference! Here's why small changes can create big impacts...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card shadow-sm border-success">
+              <div class="card-body">
+                <h6 class="card-title">Eco-Friendly Practices</h6>
+                <p class="card-text">Explore some effective strategies to reduce your plastic footprint and inspire others... 
+                    Article/Blog link: https://en.wikipedia.org/wiki/Plastic_recycling
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Creating Post -->
+  <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createPostModalLabel">Create a Post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="createPostForm">
+            <div class="mb-3">
+              <label for="postTitle" class="form-label">Title</label>
+              <input type="text" class="form-control" id="postTitle" required>
+            </div>
+            <div class="mb-3">
+              <label for="postContent" class="form-label">Content</label>
+              <textarea class="form-control" id="postContent" rows="4" required></textarea>
+            </div>
+            
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="submitPostBtn">Submit Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    document.getElementById('submitPostBtn').addEventListener('click', function() {
+      const title = document.getElementById('postTitle').value;
+      const content = document.getElementById('postContent').value;
+
+      if (title && content) {
+        const postList = document.getElementById('post-list');
+        const newPost = document.createElement('div');
+        newPost.classList.add('col-md-3', 'mb-3');
+        newPost.innerHTML = `
+          <div class="card shadow-sm border-primary">
+            <div class="card-body">
+              <h6 class="card-title">${title}</h6>
+              <p class="card-text">${content}</p>
+            </div>
+          </div>
+        `;
+        postList.appendChild(newPost);
+        document.getElementById('createPostModal').modal('hide');
+      }
+    });
+
+    document.getElementById('exploreForumBtn').addEventListener('click', function() {
+      const recentPosts = document.getElementById('recent-posts');
+      recentPosts.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

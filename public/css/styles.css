@@ -1,0 +1,370 @@
+/* Styling the body */
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Styling for the pledge section */
+#pledge-section {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden initially */
+    transform: translateY(20px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-align: center; /* Center the text */
+}
+
+/* Center the confirm pledge button */
+#confirm-pledge-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+/* Styling for rounded buttons for 'View Impact Tracker' and 'Community Forum' */
+#tracker a, #community a {
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the buttons */
+#tracker a:hover, #community a:hover {
+    background-color: #1a73e8;
+}
+  
+  /* Styling for the pledge text */
+  #pledge-section h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  #pledge-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling the confirm pledge button */
+  #confirm-pledge-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #confirm-pledge-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  #impactChart {
+    margin-top: 30px;
+  }
+  /* Styling the impact section */
+#impact-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Title styling */
+  #impact-section h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Card layout for impact details */
+  .impact-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Icon in the cards */
+  .impact-card .icon {
+    font-size: 30px;
+    color: #28a745;
+    margin-right: 15px;
+  }
+  
+  /* Text inside the cards */
+  .impact-card p {
+    font-size: 18px;
+    margin: 0;
+    color: #555;
+  }
+  
+  /* Chart container styling */
+  #impactChart {
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Hero Section Styling */
+.hero-section {
+    background: linear-gradient(45deg, #4caf50, #81c784);
+    padding: 80px 0;
+    border-bottom: 3px solid #388e3c;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate__fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  .hero-section .display-4 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation-delay: 1s;
+  }
+  
+  .hero-section .lead {
+    font-size: 1.5rem;
+    animation-delay: 2s;
+  }
+  
+  /* Button Hover Animation */
+  .hero-section .btn {
+    transition: all 0.3s ease;
+  }
+  
+  .hero-section .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Impact Dashboard Card Styling */
+  .card-body h5 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .card-body h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  /* Fun Facts Section */
+  #funFacts {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #212529;
+    background-color: #f1f8e9;
+  }
+  
+  blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #388e3c;
+    font-weight: 600;
+    border-left: 5px solid #81c784;
+    padding-left: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #f5f5f5;
+    display: inline-block;
+  }
+  
+  blockquote p {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-section .display-4 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-section .lead {
+      font-size: 1.2rem;
+    }
+  
+    .btn-lg {
+      font-size: 1rem;
+    }
+  }
+
+  /* Community Forum Section */
+#community {
+    background-color: #f4f9fb;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Header styling */
+  #community h3 {
+    font-size: 3rem;
+    color: #007bff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Card Styling */
+  .community-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .community-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Card Titles and Text */
+  .card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Button styling */
+  .btn {
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-primary {
+    background-color: #28a745;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+    border: none;
+  }
+  
+  .btn-info:hover {
+    background-color: #138496;
+  }
+  
+  /* Recent Posts Section */
+  #recent-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #recent-posts .card {
+    width: 18rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #recent-posts .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #community h3 {
+      font-size: 2rem;
+    }
+  
+    .card-title {
+      font-size: 1.2rem;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    #recent-posts .card {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  
+  
