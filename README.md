@@ -8,6 +8,10 @@ The platform enables users to:
 - Track the environmental impact of their actions, including the number of plastic cups saved and CO₂ reduced.
 - Join a community forum to share ideas, experiences, and collectively work toward a plastic-free future.
 
+## Visit the Website
+
+[Live Demo: CupLess Campus](https://cup-less-campus-lgt1s1h3v-himu336s-projects.vercel.app/)
+
 ## Features
 
 - **Pledge System**: Users can take a pledge to reduce disposable cup usage.
@@ -21,8 +25,6 @@ The platform enables users to:
 - **Backend**: Node.js (for server-side logic, if applicable)
 - **Database**: MongoDB or PostgreSQL (for storing user pledges and tracking impact)
 - **Hosting**: GitHub Pages for frontend deployment (if applicable)
-
-## How to Use
 
 ### Clone the Repository
 
