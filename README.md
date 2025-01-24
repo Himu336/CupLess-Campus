@@ -1,4 +1,4 @@
-# CupLess Campus
+# CupLess Campus: Technotronics Hackathon
 
 ## Description
 **CupLess Campus** is a sustainability-focused platform aimed at reducing disposable cup usage on college campuses. The goal is to promote the use of reusable cups, raise awareness about plastic pollution, and provide a system for tracking environmental impact. The project is developed as part of the **Technotronics Hackathon** at **Dnyanprassarak Mandal's College and Research Centre**, Goa.
