@@ -10,7 +10,7 @@ The platform enables users to:
 
 ## Visit the Website
 
-[Live Demo: CupLess Campus](https://cup-less-campus-lgt1s1h3v-himu336s-projects.vercel.app/)
+[Live Demo: CupLess Campus](https://cup-less-campus.vercel.app)
 
 ## Features
 
